@@ -1,6 +1,6 @@
 ### Prince of Persia: Warrior Within ~ Widescreen Launcher v2
 
-This *PoP WW* launcher is based on **[UniGame Launcher v1.1.0](https://github.com/alex47exe/UniGame-Launcher/releases/tag/v1.1.0)** and **nemesis2000**'s **widescreen fix** at [http://ps2wide.net](http://ps2wide.net/pc.html#popww), already included
+This *PoP WW* launcher is based on **[UniGame Launcher v1.2.0](https://github.com/alex47exe/UniGame-Launcher/releases/tag/v1.2.0)** and **nemesis2000**'s **widescreen fix** at [http://ps2wide.net](http://ps2wide.net/pc.html#popww), already included
 
 ------
 
