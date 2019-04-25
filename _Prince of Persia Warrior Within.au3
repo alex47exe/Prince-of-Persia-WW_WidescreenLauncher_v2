@@ -94,6 +94,12 @@ Switch $ini_Savegame_dir
 		$Savegame_dir = @ScriptDir & "\" & $ini_Savegame_subdir
 EndSwitch
 
+$HUD_Fix_CanStretchRect = IniRead($ini, "fix", "CanStretchRect", 0)
+$Fog_Fix_ForceVSFog = IniRead($ini, "fix", "ForceVSFog", 1)
+$Fog_Fix_InvertFogRange = IniRead($ini, "fix", "InvertFogRange", 0)
+
+$Ini2 = @ScriptDir & "\pop2.ini"
+
 If IniRead(@AppDataCommonDir & "\SalFisher47\UniGame Launcher\" & StringTrimRight(@ScriptName, 4) & ".ini", "launcher", "game_path", "") <> @ScriptDir Then
 	$first_launch = 1
 	IniWrite(@AppDataCommonDir & "\SalFisher47\UniGame Launcher\" & StringTrimRight(@ScriptName, 4) & ".ini", "launcher", "game_path", " " & @ScriptDir)
@@ -130,12 +136,6 @@ $desktopRatio = Round(@DesktopWidth/@DesktopHeight, 2)
 _RunMain()
 
 Func _RunBefore_EveryLaunch()
-
-$HUD_Fix_CanStretchRect = IniRead($ini, "fix", "CanStretchRect", 0)
-$Fog_Fix_ForceVSFog = IniRead($ini, "fix", "ForceVSFog", 1)
-$Fog_Fix_InvertFogRange = IniRead($ini, "fix", "InvertFogRange", 0)
-
-$Ini2 = @ScriptDir & "\pop2.ini"
 
 $desktop_width = IniRead($Ini, "Exe", "desktop_width", 0)
 $desktop_height = IniRead($Ini, "Exe", "desktop_height", 0)
